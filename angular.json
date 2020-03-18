@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "XLB-sos-heatmap": {
@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "XLB-sos-heatmap"
+    }
+  },
+  "defaultProject": "XLB-sos-heatmap",
+  "cli": {
+    "analytics": false
+  }
 }

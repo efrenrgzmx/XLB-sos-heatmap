@@ -8,6 +8,8 @@ import { HeatmapComponent } from './sections/heatmap/heatmap.component';
 import { SymptomsComponent } from './sections/symptoms/symptoms.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { AgmCoreModule } from '@agm/core';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +20,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyD0JXT7iRMZGufjrmNmkIRqrW5D_jEoPCE'
+    })
+
   ],
   providers: [],
   bootstrap: [AppComponent]

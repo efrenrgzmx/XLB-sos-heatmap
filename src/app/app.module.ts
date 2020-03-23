@@ -22,7 +22,7 @@ import { AgmCoreModule } from '@agm/core';
     AppRoutingModule,
     BrowserAnimationsModule,
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyD0JXT7iRMZGufjrmNmkIRqrW5D_jEoPCE'
+      apiKey: 'API_KEY'
     })
 
   ],

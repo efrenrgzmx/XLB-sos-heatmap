@@ -1,5 +1,5 @@
 # XLBSosHeatmap
-###Seguimiento de casos remotos, con sintomas y un mapa de personas con sintomas. 
+##Seguimiento de casos remotos, con sintomas y un mapa de personas con sintomas. 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.1.
 

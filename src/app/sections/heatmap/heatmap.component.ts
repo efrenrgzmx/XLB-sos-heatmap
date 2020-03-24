@@ -5,11 +5,15 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './heatmap.component.html',
   styleUrls: ['./heatmap.component.css']
 })
+
+
+
 export class HeatmapComponent implements OnInit {
 
-  latitude = -28.68352;
-  longitude = -147.20785;
-  mapType = 'satellite';
+  latitude = 23.6345005;
+  longitude = -102.5527878;
+  mapType = "roadmap";
+  zoom = 5;
   constructor() { }
 
   ngOnInit(): void {

@@ -14,6 +14,9 @@ export class HeatmapComponent implements OnInit {
   longitude = -102.5527878;
   mapType = "roadmap";
   zoom = 5;
+  minClusterSize = 2;
+
+
   constructor() { }
 
   ngOnInit(): void {

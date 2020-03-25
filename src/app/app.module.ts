@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { AgmJsMarkerClustererModule } from '@agm/js-marker-clusterer';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -21,8 +22,9 @@ import { AgmCoreModule } from '@agm/core';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    AgmJsMarkerClustererModule,
     AgmCoreModule.forRoot({
-      apiKey: 'API_KEY'
+      apiKey: 'AIzaSyD0JXT7iRMZGufjrmNmkIRqrW5D_jEoPCE'
     })
 
   ],

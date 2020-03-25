@@ -1,6 +1,7 @@
 <div class="main-container">
   <div class="question-container">
-    <div class="question" [hidden]="i!=step" *ngFor="let q of questions; index as i;">
+
+    <div class="question animated fadeIn" [hidden]="i!=step" *ngFor="let q of questions; index as i;">
       <div>
         <h1>{{q}}</h1>
 
@@ -15,7 +16,7 @@
           </mat-radio-button>
         </mat-radio-group>
 
-        <mat-form-field class="radio-button" *ngIf="step == 5">
+        <mat-form-field class="radio-button" *ngIf="step == 6">
           <input matInput [(ngModel)]="answers[i]" maxlength="5" placeholder="Ex. 63213" value="94043">
         </mat-form-field>
       </div>
@@ -25,7 +26,6 @@
       <button mat-raised-button class="next-btn"  (click)="onNext()">Siguiente</button>
     </div>
   </div>
-
 </div>
 
 

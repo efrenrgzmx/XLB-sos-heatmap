@@ -7,8 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SymptomsComponent implements OnInit {
 
+  startTest = false;
   step = 0;
   questions = [
+    '¿Tienes congestión y/o escurrimiento nasal y dolor de garganta?',
     '¿Tienes sensación de falta de aire de inicio brusco (en ausencia de cualquier otra patología que justifique este síntoma)?',
     '¿Tienes fiebre? (+37.7ºC)',
     '¿Tienes tos seca y persistente?',
@@ -16,7 +18,7 @@ export class SymptomsComponent implements OnInit {
     '¿Tienes sintomatología gastrointestinal?',
     '¿Cual es tú código postal?'
   ];
-  answers = ['','','','','','']
+  answers = ['','','','','','','']
 
   constructor() {}
   ngOnInit() {

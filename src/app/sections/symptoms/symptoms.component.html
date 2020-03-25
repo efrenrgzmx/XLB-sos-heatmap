@@ -1,1 +1,32 @@
-<p>symptoms works!</p>
+<div class="main-container">
+  <div class="question-container">
+
+    <div class="question animated fadeIn" [hidden]="i!=step" *ngFor="let q of questions; index as i;">
+      <div>
+        <h1>{{q}}</h1>
+
+        <mat-radio-group [hidden]="step == questions.length-1"
+          aria-labelledby="example-radio-group-label"
+          class="radio-group" [(ngModel)]="answers[i]">
+          <mat-radio-button class="radio-button"  [value]="1">
+            Sí
+          </mat-radio-button>
+          <mat-radio-button class="radio-button"  [value]="0">
+            No
+          </mat-radio-button>
+        </mat-radio-group>
+
+        <mat-form-field class="radio-button" *ngIf="step == 6">
+          <input matInput [(ngModel)]="answers[i]" maxlength="5" placeholder="Ex. 63213" value="94043">
+        </mat-form-field>
+      </div>
+    </div>
+    <div class="buttons-container">
+      <button mat-raised-button class="next-btn"  (click)="onPrevious()">Anterior</button>
+      <button mat-raised-button class="next-btn"  (click)="onNext()">Siguiente</button>
+    </div>
+  </div>
+</div>
+
+
+

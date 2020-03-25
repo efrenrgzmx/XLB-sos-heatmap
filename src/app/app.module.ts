@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { AgmJsMarkerClustererModule } from '@agm/js-marker-clusterer';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,6 +15,8 @@ import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
 import {MatRadioModule} from '@angular/material/radio';
 
+import { AgmCoreModule } from '@agm/core';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,6 +28,10 @@ import {MatRadioModule} from '@angular/material/radio';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    AgmJsMarkerClustererModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'API_KEY'
+    }),
     MatStepperModule,
     ReactiveFormsModule,
     MatFormFieldModule,
@@ -32,7 +39,6 @@ import {MatRadioModule} from '@angular/material/radio';
     MatButtonModule,
     MatRadioModule,
     FormsModule,
-
   ],
   providers: [],
   bootstrap: [AppComponent]

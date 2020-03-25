@@ -1,0 +1,39 @@
+.main-container{
+  height: 100vh;
+  width: 100vw;
+
+  background-color: lightgray;
+}
+
+.question-container{
+  padding-top: 30vh;
+  width: 65vw;
+  min-height: 35vh;
+  margin: 0 auto;
+}
+
+.question{
+  text-align: center;
+  min-height: 35vh;
+}
+
+.buttons-container{
+  text-align: center;
+}
+
+.buttons-container button{
+  margin-left: 5vw;
+  margin-right: 5vw;
+  font-size: 20px;
+}
+
+
+.radio-group {
+  margin: 15px 0;
+}
+
+.radio-button {
+  font-weight: bolder;
+  font-size: 20px;
+  margin: 5vw;
+}

@@ -1,16 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,700&display=swap');
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: 'Montserrat', sans-serif !important; }
 
+.mat-radio-outer-circle{
+  border-color: black !important;
+}
+
+.mat-form-field-appearance-legacy .mat-form-field-underline {
+  background-color: black !important;
+}
+
+.mat-input-element {
+  caret-color: black !important;
+}
+
+.mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle {
+  border-color: #69f0ae !important;
+}
 
 .flex-container {
   display: flex;
-}
-
-
-.blue-bkg {
-  background-color:#3FAFB7;
 }
 
 

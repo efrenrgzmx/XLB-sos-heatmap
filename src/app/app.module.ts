@@ -17,13 +17,16 @@ import {MatRadioModule} from '@angular/material/radio';
 
 import { AgmCoreModule } from '@agm/core';
 import {environment} from '../environments/environment';
+import { SnackBarComponent } from './snack-bar/snack-bar.component';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     HeatmapComponent,
-    SymptomsComponent
+    SymptomsComponent,
+    SnackBarComponent
   ],
   imports: [
     BrowserModule,
@@ -41,6 +44,7 @@ import {environment} from '../environments/environment';
     MatButtonModule,
     MatRadioModule,
     FormsModule,
+    MatSnackBarModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

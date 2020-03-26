@@ -1,8 +1,6 @@
 .main-container{
   height: 100vh;
   width: 100vw;
-
-  background-color: lightgray;
 }
 
 .question-container{
@@ -41,3 +39,43 @@
 .question h1{
   font-size: 30px;
 }
+
+.disclaimer-container{
+  text-align: center;
+  padding-top: 25vh;
+  margin: 0 auto;
+  width: 60vw;
+}
+
+.disclaimer-container h1{
+  margin: 0;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+}
+
+.disclaimer-container h2{
+  font-weight: 400;
+}
+
+.disclaimer-container h3{
+  font-weight: 200;
+}
+
+.disclaimer-container em{
+  font-style: normal;
+ font-weight: 600 !important;
+}
+
+.init-button {
+  margin-top: 10vh;
+  padding: 5px 20px;
+  font-weight: normal;
+  font-size: 20px;
+  background-color: #2c8031;
+  color: white;
+}
+
+.mat-radio-outer-circle{
+  border-color: black !important;
+}
+

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {MatSnackBar} from '@angular/material/snack-bar';
+import {SnackBarComponent} from '../../snack-bar/snack-bar.component';
 
 @Component({
   selector: 'app-symptoms',
@@ -20,11 +22,18 @@ export class SymptomsComponent implements OnInit {
   ];
   answers = ['','','','','','','']
 
-  constructor() {}
+  constructor(private _snackBar: MatSnackBar) {
+  }
+
   ngOnInit() {
   }
 
   onNext() {
+    if(this.answers[this.step] === '') {
+      this.openSnackBar();
+      return;
+    }
+
     if (this.step === (this.questions.length - 1)) {
       console.log(this.answers);
       return;
@@ -40,4 +49,13 @@ export class SymptomsComponent implements OnInit {
     this.step--;
   }
 
+  onStartTest() {
+    this.startTest = true;
+  }
+
+  openSnackBar() {
+    this._snackBar.openFromComponent(SnackBarComponent, {
+      duration: 5 * 1000,
+    });
+  }
 }

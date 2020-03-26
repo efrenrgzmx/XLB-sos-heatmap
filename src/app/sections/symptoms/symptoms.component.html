@@ -1,6 +1,11 @@
 <div class="main-container">
-  <div class="question-container">
-
+  <div [hidden]="startTest" class="disclaimer-container">
+    <h1>Bienvenido al test de sintomas de Covida.</h1>
+    <h2>Debido a la creciente preocupación surgida por el COVID-19, hemos creado este test para ayudarte a detectar cualquier síntoma o indicador de esta enfermedad.</h2>
+    <h3>Te recordamos que es solo una herramienta para apoyar al cuidado de tu salud <br><em>EN NINGÚN MOMENTO SE DEBE TOMAR LO SUGERIDO EN EL TEST COMO UN DIAGNÓSTICO</em><br> se recomienda consultar con un médico sobre el resultado de tu orientación.</h3>
+    <button mat-raised-button class="init-button"  (click)="onStartTest()">Iniciar Test</button>
+  </div>
+  <div [hidden]="!startTest" class="question-container">
     <div class="question animated fadeIn" [hidden]="i!=step" *ngFor="let q of questions; index as i;">
       <div>
         <h1>{{q}}</h1>

@@ -16,6 +16,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatRadioModule} from '@angular/material/radio';
 
 import { AgmCoreModule } from '@agm/core';
+import {environment} from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { AgmCoreModule } from '@agm/core';
     BrowserAnimationsModule,
     AgmJsMarkerClustererModule,
     AgmCoreModule.forRoot({
-      apiKey: 'API_KEY'
+      apiKey: environment.googleMapsAPIKey,
+      libraries: ['visualization']
     }),
     MatStepperModule,
     ReactiveFormsModule,
